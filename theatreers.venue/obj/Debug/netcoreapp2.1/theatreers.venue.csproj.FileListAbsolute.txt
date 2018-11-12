@@ -1,0 +1,14 @@
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\bin\Debug\netcoreapp2.1\theatreers.venue.deps.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\bin\Debug\netcoreapp2.1\theatreers.venue.runtimeconfig.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\bin\Debug\netcoreapp2.1\theatreers.venue.runtimeconfig.dev.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\bin\Debug\netcoreapp2.1\theatreers.venue.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\bin\Debug\netcoreapp2.1\theatreers.venue.pdb
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.csprojAssemblyReference.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.csproj.CoreCompileInputs.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.RazorAssemblyInfo.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.RazorAssemblyInfo.cs
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.AssemblyInfoInputs.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.AssemblyInfo.cs
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.RazorTargetAssemblyInfo.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue\obj\Debug\netcoreapp2.1\theatreers.venue.pdb

@@ -1,0 +1,14 @@
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.tests.deps.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.tests.runtimeconfig.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.tests.runtimeconfig.dev.json
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.tests.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.tests.pdb
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.csprojAssemblyReference.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.csproj.CoreCompileInputs.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.AssemblyInfoInputs.cache
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.AssemblyInfo.cs
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.pdb
