@@ -12,3 +12,6 @@ C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj
 C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.AssemblyInfo.cs
 C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.dll
 C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.pdb
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.dll
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\bin\Debug\netcoreapp2.1\theatreers.venue.pdb
+C:\Users\chredd\Documents\Theatreers\theatreers.venue\theatreers.venue.tests\obj\Debug\netcoreapp2.1\theatreers.venue.tests.csproj.CopyComplete
