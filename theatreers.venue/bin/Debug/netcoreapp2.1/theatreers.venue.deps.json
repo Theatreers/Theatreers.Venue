@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "4a46dedc2cf86c5b6974aaa187d387c2670b6659"
+    "signature": "15d986a87c4aab93b33c17dbce208dd439034152"
   },
   "compilationOptions": {
     "defines": [
@@ -22,18 +22,18 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "theatreers.venue/1.0.0": {
+      "Theatreers.Venue/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "theatreers.shared": "0.0.7"
+          "theatreers.shared": "0.0.11"
         },
         "runtime": {
-          "theatreers.venue.dll": {}
+          "Theatreers.Venue.dll": {}
         },
         "compile": {
-          "theatreers.venue.dll": {}
+          "Theatreers.Venue.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -219,14 +219,14 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
-      "theatreers.shared/0.0.7": {
+      "theatreers.shared/0.0.11": {
         "dependencies": {
           "MySqlConnector": "0.47.1"
         },
         "runtime": {
           "lib/netstandard2.0/theatreers.shared.dll": {
-            "assemblyVersion": "0.0.7.0",
-            "fileVersion": "0.0.7.0"
+            "assemblyVersion": "0.0.11.0",
+            "fileVersion": "0.0.11.0"
           }
         },
         "compile": {
@@ -3176,7 +3176,7 @@
     }
   },
   "libraries": {
-    "theatreers.venue/1.0.0": {
+    "Theatreers.Venue/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3244,12 +3244,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "theatreers.shared/0.0.7": {
+    "theatreers.shared/0.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f7K9qv6MRISmnX7HlZQL/sLyechJR2u46Eu6WhpfvD5y16neVlHPFUPyY6PPBYz/zvO/ZgErEZe5OwV73i5crw==",
-      "path": "theatreers.shared/0.0.7",
-      "hashPath": "theatreers.shared.0.0.7.nupkg.sha512"
+      "sha512": "sha512-CZ/AKiTcIYGH5sVt9npoVeyUzZboMNDRnlnzA9fi27iGPzCf+F76CIY5B1wGfogYOAo3jC+6ce0D7ToF9ZNTig==",
+      "path": "theatreers.shared/0.0.11",
+      "hashPath": "theatreers.shared.0.0.11.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

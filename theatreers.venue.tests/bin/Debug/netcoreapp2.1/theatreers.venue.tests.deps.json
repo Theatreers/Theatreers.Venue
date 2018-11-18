@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "17715cf301e29f2fe380a6fb7e91812f3552c68a"
+    "signature": "a511ad1c029c2de5e4f22b17f5ed890892e0eccc"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,7 +13,7 @@
           "System.Diagnostics.TraceSource": "4.3.0",
           "System.Runtime.Loader": "4.3.0",
           "System.Xml.XPath.XmlDocument": "4.3.0",
-          "theatreers.venue": "1.0.0",
+          "Theatreers.Venue": "1.0.0",
           "xunit": "2.3.1",
           "xunit.runner.visualstudio": "2.3.1"
         },
@@ -2228,14 +2228,14 @@
           }
         }
       },
-      "theatreers.shared/0.0.7": {
+      "theatreers.shared/0.0.11": {
         "dependencies": {
           "MySqlConnector": "0.47.1"
         },
         "runtime": {
           "lib/netstandard2.0/theatreers.shared.dll": {
-            "assemblyVersion": "0.0.7.0",
-            "fileVersion": "0.0.7.0"
+            "assemblyVersion": "0.0.11.0",
+            "fileVersion": "0.0.11.0"
           }
         }
       },
@@ -2296,12 +2296,12 @@
           "Microsoft.NET.Test.Sdk": "15.8.0"
         }
       },
-      "theatreers.venue/1.0.0": {
+      "Theatreers.Venue/1.0.0": {
         "dependencies": {
-          "theatreers.shared": "0.0.7"
+          "theatreers.shared": "0.0.11"
         },
         "runtime": {
-          "theatreers.venue.dll": {}
+          "Theatreers.Venue.dll": {}
         }
       }
     }
@@ -3530,12 +3530,12 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "theatreers.shared/0.0.7": {
+    "theatreers.shared/0.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f7K9qv6MRISmnX7HlZQL/sLyechJR2u46Eu6WhpfvD5y16neVlHPFUPyY6PPBYz/zvO/ZgErEZe5OwV73i5crw==",
-      "path": "theatreers.shared/0.0.7",
-      "hashPath": "theatreers.shared.0.0.7.nupkg.sha512"
+      "sha512": "sha512-CZ/AKiTcIYGH5sVt9npoVeyUzZboMNDRnlnzA9fi27iGPzCf+F76CIY5B1wGfogYOAo3jC+6ce0D7ToF9ZNTig==",
+      "path": "theatreers.shared/0.0.11",
+      "hashPath": "theatreers.shared.0.0.11.nupkg.sha512"
     },
     "xunit/2.3.1": {
       "type": "package",
@@ -3593,7 +3593,7 @@
       "path": "xunit.runner.visualstudio/2.3.1",
       "hashPath": "xunit.runner.visualstudio.2.3.1.nupkg.sha512"
     },
-    "theatreers.venue/1.0.0": {
+    "Theatreers.Venue/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

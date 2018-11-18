@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using theatreers.venue.Controllers;
+using Theatreers.Venue.Controllers;
 using theatreers.shared.Interfaces;
 using theatreers.shared.Models;
 using theatreers.shared.Services;
 using Xunit;
 
-namespace theatreers.venue.tests
+namespace Theatreers.Venue.tests
 {
     public class VenuesControllerTest
     {
@@ -37,7 +37,7 @@ namespace theatreers.venue.tests
             var okResult = _controller.Get().Result as OkObjectResult;
 
             // Assert
-            var items = Assert.IsType<List<Venue>>(okResult.Value);
+            var items = Assert.IsType<List<VenueModel>>(okResult.Value);
             Assert.Equal(3, items.Count);
         }
 
@@ -74,15 +74,15 @@ namespace theatreers.venue.tests
             var okResult = _controller.Get(testId).Result as OkObjectResult;
 
             // Assert
-            Assert.IsType<Venue>(okResult.Value);
-            Assert.Equal(testId, (okResult.Value as Venue).Id);
+            Assert.IsType<VenueModel>(okResult.Value);
+            Assert.Equal(testId, (okResult.Value as VenueModel).Id);
         }
 
         [Fact]
         public void Add_InvalidObjectPassed_ReturnsBadRequest()
         {
             // Arrange
-            var nameMissingItem = new Venue()
+            var nameMissingItem = new VenueModel()
             {
                 Id = 1
             };
@@ -100,7 +100,7 @@ namespace theatreers.venue.tests
         public void Add_ValidObjectPassed_ReturnsCreatedResponse()
         {
             // Arrange
-            Venue testItem = new Venue()
+            VenueModel testItem = new VenueModel()
             {
                 Name = "The New Theatre"
             };
@@ -116,17 +116,17 @@ namespace theatreers.venue.tests
         public void Add_ValidObjectPassed_ReturnedResponseHasCreatedItem()
         {
             // Arrange
-            var testItem = new Venue()
+            var testItem = new VenueModel()
             {
                 Name = "Kenton Theatre"
             };
 
             // Act
             var createdResponse = _controller.Post(testItem) as CreatedAtActionResult;
-            var item = createdResponse.Value as Venue;
+            var item = createdResponse.Value as VenueModel;
 
             // Assert
-            Assert.IsType<Venue>(item);
+            Assert.IsType<VenueModel>(item);
             Assert.Equal(testItem.Name, item.Name);
         }
 
@@ -167,7 +167,7 @@ namespace theatreers.venue.tests
 
             // Assert
             var validateCount = _controller.Get().Result as OkObjectResult;
-            var updatedItems = Assert.IsType<List<Venue>>(validateCount.Value);
+            var updatedItems = Assert.IsType<List<VenueModel>>(validateCount.Value);
             Assert.Equal(2, updatedItems.Count);
         }
 
@@ -175,7 +175,7 @@ namespace theatreers.venue.tests
         public void Update_NotExistingGuidPassed_ReturnsNotFoundResponse()
         {            
             // Arrange
-            var proposedUpdate = new Venue()
+            var proposedUpdate = new VenueModel()
             {
                 Id = 13674,
                 Name = "The Prince of Wales Theatre"
@@ -192,7 +192,7 @@ namespace theatreers.venue.tests
         public void Update_ValidObjectPassed_ReturnedResponseHasUpdatedItem()
         {
             // Arrange
-            var proposedUpdate = new Venue()
+            var proposedUpdate = new VenueModel()
             {
                 Id = 1,
                 Name = "The Hexagon"
@@ -203,8 +203,8 @@ namespace theatreers.venue.tests
             
             // Assert
             var validateResult = _controller.Get(proposedUpdate.Id).Result as OkObjectResult;
-            Assert.IsType<Venue>(okResult.Value);
-            Assert.Equal(proposedUpdate.Name, (okResult.Value as Venue).Name);
+            Assert.IsType<VenueModel>(okResult.Value);
+            Assert.Equal(proposedUpdate.Name, (okResult.Value as VenueModel).Name);
         }
     }
 }

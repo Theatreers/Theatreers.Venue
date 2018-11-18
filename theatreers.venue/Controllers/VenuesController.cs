@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using theatreers.shared.Models;
 using theatreers.shared.Interfaces;
 
-namespace theatreers.venue.Controllers
+namespace Theatreers.Venue.Controllers
 {
     //[Authorize]
     [Route("venues")]
@@ -24,7 +24,7 @@ namespace theatreers.venue.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Venue>> Get()
+        public ActionResult<IEnumerable<VenueModel>> Get()
         {               
             var items = _service.GetAll();
             return Ok(items);
@@ -32,7 +32,7 @@ namespace theatreers.venue.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<Venue> Get(int id)
+        public ActionResult<VenueModel> Get(int id)
         {   
             var item = _service.GetById(id);
     
@@ -46,20 +46,20 @@ namespace theatreers.venue.Controllers
 
         // POST api/values
         [HttpPost]
-        public ActionResult Post([FromBody] Venue body)
+        public ActionResult Post([FromBody] VenueModel body)
         {      
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
     
-            Venue item = _service.Create(body);
+            VenueModel item = _service.Create(body);
             return CreatedAtAction("Get", new { id = item.Id }, item);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public ActionResult<Venue> Put([FromBody] Venue body)
+        public ActionResult<VenueModel> Put([FromBody] VenueModel body)
         {                
             var existingItem = _service.GetById(body.Id);
  

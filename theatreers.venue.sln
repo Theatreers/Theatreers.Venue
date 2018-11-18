@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theatreers.venue", "theatreers.venue\theatreers.venue.csproj", "{4F06AC4C-DB3D-4BF7-82F1-24F560BFA40B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theatreers.Venue", "Theatreers.Venue\Theatreers.Venue.csproj", "{4F06AC4C-DB3D-4BF7-82F1-24F560BFA40B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theatreers.venue.tests", "theatreers.venue.tests\theatreers.venue.tests.csproj", "{8DA0F072-751F-4A40-A6EF-E5A998CBEFCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Theatreers.Venue.tests", "Theatreers.Venue.tests\Theatreers.Venue.tests.csproj", "{8DA0F072-751F-4A40-A6EF-E5A998CBEFCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

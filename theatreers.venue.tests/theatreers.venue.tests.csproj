@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\theatreers.venue\theatreers.venue.csproj" />
+    <ProjectReference Include="..\Theatreers.Venue\Theatreers.Venue.csproj" />
   </ItemGroup>
 
 </Project>

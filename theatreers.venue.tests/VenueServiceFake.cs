@@ -5,37 +5,37 @@ using theatreers.shared.Interfaces;
 
 public class VenueServiceFake : IVenueService
 {
-    private readonly List<Venue> _VenueList;
+    private readonly List<VenueModel> _VenueList;
  
     public VenueServiceFake()
     {
-        _VenueList = new List<Venue>()
+        _VenueList = new List<VenueModel>()
             {
-                new Venue() { Id = 1, Name = "Hexagon" },
-                new Venue() { Id = 2, Name = "Luckley School" },
-                new Venue() { Id = 3, Name = "A random church" }
+                new VenueModel() { Id = 1, Name = "Hexagon" },
+                new VenueModel() { Id = 2, Name = "Luckley School" },
+                new VenueModel() { Id = 3, Name = "A random church" }
             };
     }
  
-    public IEnumerable<Venue> GetAll()
+    public IEnumerable<VenueModel> GetAll()
     {
         return _VenueList;
     }
     
-    public Venue GetById(int id)
+    public VenueModel GetById(int id)
     {
         return _VenueList.Where(a => a.Id == id)
             .FirstOrDefault();
     }
  
-    public Venue Create(Venue newItem)
+    public VenueModel Create(VenueModel newItem)
     {
         newItem.Id = _VenueList.Count + 1;
         _VenueList.Add(newItem);
         return newItem;
     }
 
-    public Venue Update(Venue body)
+    public VenueModel Update(VenueModel body)
     {
         var existing = _VenueList.First(a => a.Id == body.Id);
         return existing;

@@ -4,13 +4,13 @@ FROM microsoft/dotnet:sdk AS build-env
 # In the build environment, set our work directory as app 
 # also add packages to pull in the path from our build agent
 # for packages that need to be installed.
-WORKDIR /theatreers.venue
+WORKDIR /Theatreers.Venue
 ARG packages
 
 # Only copy the csproj for now. Then the relevant packages
 # from the agent, so they can be used as part of the restore
 # process (this is done as part of publish task).
-COPY theatreers.venue/theatreers.venue.csproj ./
+COPY Theatreers.Venue/Theatreers.Venue.csproj ./
 COPY /$packages .nugets
 
 # Copy the remaining application files. Publish the dll,
@@ -20,28 +20,28 @@ COPY /$packages .nugets
 # require a restore to occur. Hence pointing to the source
 # folder inside the dotnet publish task.
 
-COPY theatreers.venue/ ./
-RUN dotnet publish /theatreers.venue/theatreers.venue.csproj --source ".nugets" -c Release -o /theatreers.venue/out
+COPY Theatreers.Venue/ ./
+RUN dotnet publish /Theatreers.Venue/Theatreers.Venue.csproj --source ".nugets" -c Release -o /Theatreers.Venue/out
 
 # Set the work directory as the tests directory
 # Copy the tests from agent to docker environment
 # Restore the packages for the original package
 
 FROM build-env AS test-env
-WORKDIR /theatreers.venue.tests
-COPY theatreers.venue.tests/. ./
-RUN dotnet restore --source "/theatreers.venue/.nugets"
+WORKDIR /Theatreers.Venue.Tests
+COPY Theatreers.Venue.Tests/. ./
+RUN dotnet restore --source "/Theatreers.Venue/.nugets"
 
 # Run the test output it to an XML file in the results directory
 # Copy that file back to the main agent, ready for the publish
 # task later on
-ENTRYPOINT dotnet test --"logger:trx;LogFileName=/theatreers.venue.tests/results/TEST-output.xml"  --no-restore
+ENTRYPOINT dotnet test --"logger:trx;LogFileName=/Theatreers.Venue.Tests/results/TEST-output.xml"  --no-restore
 # Chown all the files to the app user.
-RUN chmod -R o+wrx /theatreers.venue.tests
+RUN chmod -R o+wrx /Theatreers.Venue.Tests
 
 # Now, let's switch to building the runtime image.
 # We will use the aspnetcore-runtime image for this.
 FROM microsoft/dotnet:aspnetcore-runtime AS runtime
 WORKDIR /app
-COPY --from=build-env /theatreers.venue/out .
-ENTRYPOINT ["dotnet", "theatreers.venue.dll"]
+COPY --from=build-env /Theatreers.Venue/out .
+ENTRYPOINT ["dotnet", "Theatreers.Venue.dll"]
