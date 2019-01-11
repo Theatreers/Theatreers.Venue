@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Theatreers.Shared.Interfaces;
 using Theatreers.Shared.Services;
+using Theatreers.Venue.HealthChecks;
 
 namespace Theatreers.Venue
 {
@@ -27,6 +28,7 @@ namespace Theatreers.Venue
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHealthChecks().AddCheck<ExampleHealthCheck>("example_health_check");
             services.AddTransient<IVenueService, VenueService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
